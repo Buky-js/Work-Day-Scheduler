@@ -3,6 +3,10 @@ body {
   font-size: 16px;
 }
 
+.container{
+  width: 1200px;
+}
+
 textarea {
   background: transparent;
   border: none;
