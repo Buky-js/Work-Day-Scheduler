@@ -15,7 +15,7 @@ Below is how the application works:
 ## Installation
 The URL of the deployed application is: https://buky-js.github.io/Work-Day-Scheduler/
 
-You URL of the GitHub repository containing the code is: https://github.com/Buky-js/Work-Day-Scheduler
+The URL of the GitHub repository containing the code is: https://github.com/Buky-js/Work-Day-Scheduler
 
 ## Usage
 You can download the code to the application from my Github account
