@@ -2,14 +2,32 @@
 //Displays current date at top of calendar
 var currentDayEl = $('#currentDay');
 var currentDate = dayjs().format('dddd MMMM D, YYYY h:mm A');
-
 currentDayEl.text(currentDate);
 console.log(currentDate);
 
-function saveInLocalStorage(){
-  vat saveButton = 
+var saveButton = $('.saveBtn');
+var textArea = $('.description');
+// var storage = localStorage.get
+function saveInLocalStorage(event){
+  event.preventDefault();
+
+  var input = $(this).siblings(".description").val();
+  var key = $(this).parent().attr("id");
+
+  localStorage.setItem(key, input);
+console.log(input);
+  
+
+  // var storage = localStorage.getItem("count");
+  // $.each(saveButton, function(){
+    
+  //   var input = textArea.val();
+  // console.log(input);
+  // textArea.text = storage;
+  // localStorage.setItem("count", storage);
 }
 
+saveButton.on('click', saveInLocalStorage);
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
