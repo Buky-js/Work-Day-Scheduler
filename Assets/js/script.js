@@ -3,11 +3,11 @@
 var currentDayEl = $('#currentDay');
 var currentDate = dayjs().format('dddd MMMM D, YYYY h:mm A');
 currentDayEl.text(currentDate);
-console.log(currentDate);
+
 
 var saveButton = $('.saveBtn');
 var textArea = $('.description');
-// var storage = localStorage.get
+
 function saveInLocalStorage(event){
   event.preventDefault();
 
@@ -15,17 +15,10 @@ function saveInLocalStorage(event){
   var key = $(this).parent().attr("id");
 
   localStorage.setItem(key, input);
-console.log(input);
-  
-
-  // var storage = localStorage.getItem("count");
-  // $.each(saveButton, function(){
-    
-  //   var input = textArea.val();
   // console.log(input);
-  // textArea.text = storage;
-  // localStorage.setItem("count", storage);
+  
 }
+$('#hour-9').children('.description').val(localStorage.getItem('hour-9'));  
 
 saveButton.on('click', saveInLocalStorage);
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
