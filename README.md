@@ -1,6 +1,6 @@
 # Work-Day-Scheduler
 ## Description
-It is a calendar application that allows a user to save events for each hour of the day. This application was developed using HTML, CSS, Dayjs, Jquery and Javascript.
+This is a calendar application that allows a user to save events for each hour of the day. It was developed using HTML, CSS, Dayjs, Jquery and Javascript.
 
 ![alt](./Assets/images/screenshot.png)
 
@@ -13,7 +13,7 @@ Below is how the application works:
  * when you refresh the page, the saved events persist
 
 ## Installation
-The URL of the deployed application is:
+The URL of the deployed application is: https://buky-js.github.io/Work-Day-Scheduler/
 
 You URL of the GitHub repository containing the code is: https://github.com/Buky-js/Work-Day-Scheduler
 
